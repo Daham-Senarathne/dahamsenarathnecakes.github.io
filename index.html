@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/100/B2B2B2/confectionery.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="body">
+
+    <!-- header -->
+    <header>
+        <nav class="d-flex justify-content-center align-items-center shadow position-fixed">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a href="#" class="m-0 ff-aus fs-4 text-decoration-none font-clr-darker">Cakes</a>
+                <ul class="d-none d-md-flex d-lg-flex justify-content-center align-items-center">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">CAKES</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                </ul>
+                <button class="d-none d-sm-none d-md-block d-lg-block button-dark">JOIN US</button>
+                <button class="d-block d-sm-block d-md-none d-lg-none bg-transparent border-0"
+                    onclick="slider_open();"><i class="bi bi-list fs-4"></i></button>
+            </div>
+            </div>
+        </nav>
+        <div class="slider d-block d-md-none d-lg-none" id="slider">
+            <button class="bg-transparent border-0" onclick="slider_close();"><i class="bi bi-x-lg"></i></button>
+            <ul class="m-0 list-unstyled">
+                <li><a href="#">ABOUT US</a></li>
+                <hr>
+                <li><a href="#">CONTACT US</a></li>
+                <hr>
+                <li><a href="#">CAKES</a></li>
+                <hr>
+                <li><a href="#">DELIVERY</a></li>
+                <hr>
+                <li><a href="#">JOIN US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- hero-section -->
+
+    <section class="hero">
+        <div class="row m-0 common-overlay d-grid justify-content-center align-content-center px-2 px-md-3 px-lg-5">
+            <p class="m-0 text-center font-clr-lighter hero-title-1 animate__animated animate__fadeInUp">Celebrate Your Special Moments With Us...</p>
+            <p class="m-0 text-center font-clr-lighter mt-5 font-clr-lighter hero-title-2 animate__animated animate__fadeInUp">WE HAVE WORKED WITH TONS OF
+                CAKE AND WE ARE LOOKING
+                FOR YOUR SPECIAL MOMENT
+            </p>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button class="button-light mx-3" onclick="toProducts();">SHOP NOW</button>
+                <button class="button-light-outline mx-3">PLACE AN ORDER</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- why -->
+
+    <section>
+        <div class="row m-0">
+            <div class="col-12 py-5">
+                <h1 class="m-0 text-center">WHY CHOOSE US...</h1>
+                <div class="col-12 pt-5">
+                    <div class="row m-0">
+                        <div class="col-12 mt-3 mt-md-3 mt-lg-0 col-md-12 col-lg-4 px-3">
+                            <div class="col-12 bg-light p-3 rounded-3 shadow">
+                                <p class="m-0 text-center"><img
+                                        src="https://img.icons8.com/ios-filled/100/000000/citrus--v1.png" /></p>
+                                <p class="m-0 fw-bold fs-5 text-center mt-3">UNIQUE FLAVORS</p>
+                                <p class="m-0 text-center mt-3">We offer a range of unique and delicious flavors that
+                                    you won't find anywhere else. From matcha green tea to salted caramel, our cakes are
+                                    sure to delight your taste buds and make your special occasion even more memorable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 mt-md-3 mt-lg-0 col-md-12 col-lg-4 px-3">
+                            <div class="col-12 bg-light p-3 rounded-3 shadow">
+                                <p class="m-0 text-center"><img
+                                        src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/100/000000/external-appreciation-digital-marketing-smashingstocks-mixed-smashing-stocks.png" />
+                                </p>
+                                <p class="m-0 fw-bold fs-5 text-center mt-3">100% CUSTOMER SATISFIED</p>
+                                <p class="m-0 text-center mt-3">We stand behind the quality of our cakes and are
+                                    committed to ensuring that every customer is 100% satisfied with their purchase. If
+                                    for any reason you are not completely happy with your cake, we will do everything we
+                                    can to make it right. Your happiness is our top priority.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 mt-md-3 mt-lg-0 col-md-12 col-lg-4 px-3">
+                            <div class="col-12 bg-light p-3 rounded-3 shadow">
+                                <p class="m-0 text-center"><img
+                                        src="https://img.icons8.com/external-glyph-zulfa-mahendra/100/000000/external-24h-food-delivery-2-glyph-zulfa-mahendra.png" />
+                                </p>
+                                <p class="m-0 fw-bold fs-5 mt-3 text-center">24/7 CUSTOMER SERVICE</p>
+                                <p class="m-0 text-center mt-3">We are dedicated to providing exceptional customer
+                                    service at all times. Whether you have a question about your order or need help
+                                    choosing the perfect cake, our friendly and knowledgeable team is available around
+                                    the clock to assist you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- categories -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">WE ARE WORKING WITH...</h1>
+            <div class="col-12">
+                <div class="row m-0 d-flex align-items-center pt-5 pb-5">
+                    <div class="col-12 col-md-12 col-lg-4 item-type-1">
+                        <p class="m-0">We can make any kind of cake you prefer including Cup cakes, Birthday cakes,
+                            Wedding cakes, Party cakes and more. If you have any suggestion or requirement please let us
+                            know by contacting and we are happy to make it for you.</p>
+                        <button class="button-dark mt-3">CONTACT</button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-8 mt-5 mt-md-5 mt-lg-0">
+                        <div class="col-12">
+                            <div class="row m-0 g-0">
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 pe-2 pb-3 pb-sm-0 pb-md-0 pb-lg-0">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/cup cake.jpg" alt="cup cakes">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Cup Cakes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-6 col-sm-3 col-md-3 text-clr-light col-lg-3 ps-2 pe-0 pe-sm-2 pe-md-2 pe-lg-2 pb-3 pb-sm-0 pb-md-0 pb-lg-0">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/birthday cake.jpg" alt="birthday cakes">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Birthday Cakes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 pe-2 ps-0 ps-sm-2 ps-md-2 ps-lg-2">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/wedding cake.jpg" alt="wedding cakes">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Wedding Cakes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 ps-2">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/party cake.jpg" alt="party cakes">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Party Cakes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- favours -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">POPULAR FLAVOURS</h1>
+            <div class="col-12">
+                <div class="row m-0 d-flex align-items-center pt-5 pb-5">
+                    <div class="col-12 col-md-12 col-lg-4 d-grid d-md-grid d-lg-none item-type-1">
+                        <p class="m-0">We use variety of flavours extracted from natural ingredients and some flavours
+                            that use to make our products are unique. But these are the most popular flavours among
+                            them.</p>
+                        <button class="button-dark mt-3">LEARN MORE</button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-8 mt-5 mt-md-5 mt-lg-0">
+                        <div class="col-12">
+                            <div class="row m-0 g-0">
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 pe-2 pb-3 pb-sm-0 pb-md-0 pb-lg-0">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/strawbery.jpg" alt="Strawberry">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Strawberry</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-6 col-sm-3 col-md-3 col-lg-3 ps-2 pe-0 pe-sm-2 pe-md-2 pe-lg-2 pb-3 pb-sm-0 pb-md-0 pb-lg-0">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/red velvet.jpg" alt="Red Velvet">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Red Velvet</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 pe-2 ps-0 ps-sm-2 ps-md-2 ps-lg-2">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/vanila.jpg" alt="Vanilla">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Vanilla</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 col-lg-3 ps-2">
+                                    <div class="col-12 card-type-1">
+                                        <img src="resources/chocolate.jpg" alt="Chocolate">
+                                        <div
+                                            class="card-type-1-overlay d-flex justify-content-center align-items-center px-2">
+                                            <h3 class="m-0 ff-aus text-center font-clr-lighter">Chocolate</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 d-none d-md-none d-lg-block item-type-1">
+                        <p class="m-0">We use variety of flavours extracted from natural ingredients and some flavours
+                            that use to make our products are unique. But these are the most popular flavours among
+                            them.</p>
+                        <button class="button-dark mt-3">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- weekly special -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">THIS WEEK SPECIAL...</h1>
+            <div class="col-12">
+                <div class="row d-flex m-0 pt-5 pb-5">
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-start align-items-center">
+                        <button class="button-dark" id="button_prev_1"><i class="bi bi-chevron-left"></i></button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-10">
+                        <div class="swiper overflow-hidden" id="swiper_1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/product 1.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Vanilla cake with Berries and
+                                                    Kiwi</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 5500.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY
+                                                    </button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/chocolate glaze.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Chocolate cake with Dark
+                                                    Chocolate glaze</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-half text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 4500.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY
+                                                    </button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/chocolate frost cake.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Chocolate cake with icing and
+                                                    sprinckles</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 4800.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY
+                                                    </button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/blue bery sponge cake.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Chocolate Sponge cake with Blue
+                                                    berries</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-half text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 6700.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY
+                                                    </button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination mt-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-end align-items-center">
+                        <button class="button-dark" id="button_next_1"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+
+    <!-- favorites -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">ALL TIME FAVORITES</h1>
+            <div class="col-12">
+                <div class="row d-flex m-0 pt-5 pb-5">
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-start align-items-center">
+                        <button class="button-dark" id="button_prev_2"><i class="bi bi-chevron-left"></i></button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-10">
+                        <div class="swiper overflow-hidden" id="swiper_2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/red velvet cup cake.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Red Velvet cup cake with
+                                                    Vanilla frost</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 250.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY</button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/berry cake.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Raspberry flavoured cake with
+                                                    Raspberry
+                                                    topping</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-half text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-clr-light mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 3800.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY</button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/product 4.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Chocolate cake with icing and
+                                                    sprinckles</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-half text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 3200.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY</button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-2 p-0">
+                                            <img src="resources/caremel cake.jpg">
+                                        </div>
+                                        <div class="col-12 py-3 px-1">
+                                            <div class="row m-0">
+                                                <p class="m-0 text-center text-truncate">Strawberry cake with Caremel
+                                                    glaze</p>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                                </div>
+                                                <h5 class="m-0 text-center text-truncate mt-2">Rs. 5300.00</h5>
+                                                <div class="col-12 d-flex justify-content-center mt-2">
+                                                    <button class="button-dark mx-2">BUY</button>
+                                                    <button class="button-light mx-2"><i
+                                                            class="bi bi-heart-fill"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination mt-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-end align-items-center">
+                        <button class="button-dark" id="button_next_2"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+
+    <!-- customer reviews -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">HERE'S WHAT CUSTOMERS SAID ABOUT US</h1>
+            <div class="col-12">
+                <div class="row d-flex m-0 pt-5 pb-5">
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-start align-items-center">
+                        <button class="button-dark" id="button_prev_3"><i class="bi bi-chevron-left"></i></button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-10">
+                        <div class="swiper overflow-hidden" id="swiper_3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row review m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-3 p-0 pt-3">
+                                            <img src="resources/customer1.jpg">
+                                        </div>
+                                        <div class="col-12 p-3">
+                                            <p class="m-0 text-center">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit. Laboriosam quidem iusto iste ipsum error laborum,
+                                                praesentium autem rerum, non expedita voluptatibus alias! Nemo, illum
+                                                unde officia soluta sit rerum, ab tenetur delectus aliquid dolor
+                                                tempore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row review m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-3 p-0 pt-3">
+                                            <img src="resources/customer2.png">
+                                        </div>
+                                        <div class="col-12 p-3">
+                                            <p class="m-0 text-center">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Cupiditate odio modi voluptatum totam asperiores cum
+                                                tenetur id alias molestias doloribus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row review m-0 rounded-3 overflow-hidden bg-light">
+                                        <div class="col-12 card-type-3 p-0 pt-3">
+                                            <img src="resources/customer3.jpg">
+                                        </div>
+                                        <div class="col-12 p-3">
+                                            <p class="m-0 text-center">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Suscipit reprehenderit labore magni. Ducimus iste
+                                                necessitatibus suscipit illo possimus numquam inventore asperiores,
+                                                aliquid a similique sint nihil, sed officiis modi deserunt ex tempore
+                                                minima rerum provident maiores. Possimus consequuntur quas fugiat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination mt-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none d-md-none d-lg-flex justify-content-end align-items-center">
+                        <button class="button-dark" id="button_next_3"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+
+    <!-- faq -->
+
+    <section>
+        <div class="row m-0">
+            <h1 class="text-center pt-5">FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="col-12">
+                <div class="row m-0 d-flex align-items-center pb-5 pt-5 px-3 px-md-4 px-lg-4">
+                    <div class="col-12 col-md-12 col-lg-5 item-type-1">
+                        <p class="m-0">Here are some of the common questions asked by our customers. Hope you gete an
+                            idea or learn something from these. If you have any question which is not mentioned here,
+                            you can ask by clicking on the button below.</p>
+                        <button class="button-dark mt-3" onclick="toContactPage();">ASK QUESTIONS</button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-7 p-0 p-md-0 ps-lg-5 mt-4 mt-md-4 mt-lg-0">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button p-0 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">What types of cakes do
+                                        you offer?
+                                    </button>
+                                    <hr>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body font-clr-mid-dark p-0 ps-4 py-2">We offer a variety of
+                                        cakes for different occasions, including birthdays, weddings, anniversaries, and
+                                        more. Our selection includes classic flavors such as chocolate, vanilla, and red
+                                        velvet, as well as more unique options like carrot cake and cheesecake. We also
+                                        offer custom cake designs for a personalized touch.</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button p-0 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">Can I place an order
+                                        online?
+                                    </button>
+                                    <hr>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body font-clr-mid-dark p-0 ps-4 py-2">Yes, you can easily
+                                        place an order online through our website. Simply select the cake you want,
+                                        choose the size, and add any customization options. You can also specify the
+                                        delivery date and time, and pay securely using a credit card or other payment
+                                        method.</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button p-0 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">How far in advance
+                                        should I place my order?
+                                    </button>
+                                    <hr>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body font-clr-mid-dark p-0 ps-4 py-2">We recommend placing
+                                        your order at least 48 hours in advance to ensure availability and timely
+                                        delivery. However, we understand that sometimes you may need a cake last-minute,
+                                        and we will do our best to accommodate your request.</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button p-0 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">Do you offer delivery?
+                                    </button>
+                                    <hr>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body font-clr-mid-dark p-0 py-2 ps-4">Yes, we offer delivery
+                                        within our local area for an additional fee. You can choose the delivery date
+                                        and time during the checkout process. Alternatively, you can opt for pickup at
+                                        our physical location if that's more convenient for you.</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed p-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">Do you have any
+                                        gluten-free or vegan options?
+                                    </button>
+                                    <hr>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body font-clr-mid-dark p-0 py-2 ps-4">Yes, we offer
+                                        gluten-free and vegan options for some of our cakes. You can browse our
+                                        selection and filter by dietary restrictions to see what's available. However,
+                                        please note that while we take precautions to avoid cross-contamination, our
+                                        kitchen is not gluten-free or vegan-certified.</div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+
+    <!-- newsletter -->
+
+    <section>
+        <div class="row m-0 newsletter">
+            <div class="col-12 common-overlay">
+                <h1 class="m-0 text-center pt-5 font-clr-lighter">75% OFF for your first purchase...</h1>
+                <div class="col-12 d-flex justify-content-center mt-5 pb-5">
+                    <button class="button-light mx-3" onclick="toProducts();">GET STARTED</button>
+                    <button class="button-light-outline mx-3">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="shadow-lg">
+        <nav>
+            <div class="row m-0">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <p class="m-0">Cakes.com</p>
+                    <hr>
+                    <p class="m-0">Our passion is to deliver the best CAKE for our customers.</p>
+                    <div class="col-12 mt-3 d-flex align-items-center">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter mx-2"></i></a>
+                        <a href="#"><i class="bi bi-youtube mx-2"></i></a>
+                        <a href="#"><i class="bi bi-instagram mx-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <hr class="d-block d-md-none d-lg-none">
+                    <p class="m-0">QUICK LINKS</p>
+                    <hr>
+                    <div class="col-12">
+                        <div class="row m-0 gy-1">
+                            <a href="#">Shop now</a>
+                            <a href="#">Delivery</a>
+                            <a href="#">Place an order</a>
+                            <a href="#">Event Organizing</a>
+                        </div>
+                        <hr class="d-block d-md-none d-lg-none">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <p class="m-0">SUPPORT</p>
+                    <hr>
+                    <div class="col-12">
+                        <div class="row m-0 gy-1">
+                            <a href="#">Location</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Special offers</a>
+                            <a href="#">Ask a Question</a>
+                        </div>
+                        <hr class="d-block d-md-none d-lg-none">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <p class="m-0">SUBSCRIBE TO US AND KEEP IN TOUCH WITH THE LATEST NEWS</p>
+                    <input type="text" class="col-12 mt-3" placeholder="Enter your Email...">
+                    <button class="button-dark mt-3">SUBMIT</button>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <p class="m-0 pb-3 text-center">&copy; 2022 Cakes.com | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
